@@ -108,7 +108,8 @@
                     TextTransform="None"
                     HeightRequest="54"
                     WidthRequest="230"
-                    Margin="50,20,0,10"/>
+                    Margin="50,20,0,10"
+                    Command="{Binding Insertarcommand}"/>
         </StackLayout>
     </StackLayout>
 </ContentPage>
