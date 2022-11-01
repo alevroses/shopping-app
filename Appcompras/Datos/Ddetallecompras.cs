@@ -25,7 +25,7 @@ namespace Appcompras.Datos
                 });
         }
 
-        public async Task<List<Mdetallecompras>> MostrarpreviaDc()
+        public async Task<List<Mdetallecompras>> MostrarVistapreviaDc()
         {
             var ListaDc = new List<Mdetallecompras>();
             var parametrosProductos = new Mproductos();
