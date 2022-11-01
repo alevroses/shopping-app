@@ -24,5 +24,31 @@ namespace Appcompras.Datos
                     Total = parametros.Total
                 });
         }
+
+        public async Task<List<Mdetallecompras>> MostrarpreviaDc()
+        {
+            var ListaDc = new List<Mdetallecompras>();
+            var parametrosProductos = new Mproductos();
+            var funcionproductos = new Dproductos();
+
+            var data = await Cconexion.firebase
+                .Child("Detallecompra")
+                .OnceAsync<Mdetallecompras>();
+
+            data.Where(a => a.Key != "Modelo");
+
+            foreach(var hobit in data)
+            {
+                var parametros = new Mdetallecompras();
+                parametros.Idproducto = hobit.Object.Idproducto;
+                parametrosProductos.Idproducto = hobit.Object.Idproducto;
+                var listaproductos = await funcionproductos.MostrarproductosXid(parametrosProductos);
+
+                parametros.Imagen = listaproductos[0].Icono;
+                ListaDc.Add(parametros);
+            }
+
+            return ListaDc;
+        }
     }
 }
