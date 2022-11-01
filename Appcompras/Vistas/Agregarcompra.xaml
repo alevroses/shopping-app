@@ -9,17 +9,21 @@
         <Image Source="https://i.postimg.cc/nL90fCcX/leftarrow.png"
                HeightRequest="20"
                Margin="-20, 20"
-               HorizontalOptions="Start"/>
+               HorizontalOptions="Start">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Volvercommand}"/>
+            </Image.GestureRecognizers>
+        </Image>
         <StackLayout>
             <Image Source="{Binding Parametrosrecibe.Icono}"
                    Margin="0,0,0,30"
                    HeightRequest="220"/>
-            <Label Text="Manzana"
+            <Label Text="{Binding Parametrosrecibe.Descripcion}"
                    FontAttributes="Bold"
                    FontSize="36"
                    TextColor="Black"
                    />
-            <Label Text="500g"
+            <Label Text="{Binding Parametrosrecibe.Peso}"
                    CharacterSpacing="1"
                    TextColor="Gray"
                    Margin="0,-8,0,4"
@@ -40,8 +44,12 @@
                            FontSize="36"
                            HorizontalOptions="Start"
                            TextColor="Black"
-                           Margin="16,-2,0,6"/>
-                    <Label Text="1"
+                           Margin="16,-2,0,6">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Disminuircommand}"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Text="{Binding Cantidad}"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            FontSize="18"
@@ -51,10 +59,14 @@
                            FontSize="21"
                            HorizontalOptions="End"
                            TextColor="Black"
-                           Margin="0,-4,16,0" 
-                           VerticalOptions="Center"/>
+                           Margin="0,-4,16,0"
+                           VerticalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Aumentarcommand}" />
+                        </Label.GestureRecognizers>
+                    </Label>
                 </Grid>
-                <Label Text="$5.30"
+                <Label Text="{Binding Preciotexto}"
                        FontAttributes="Bold"
                        FontSize="36"
                        TextColor="Black"
