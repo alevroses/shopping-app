@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
+using Plugin.SharedTransitions;
 
 namespace Appcompras.VistaModelo
 {
@@ -128,6 +129,9 @@ namespace Appcompras.VistaModelo
             var tap = new TapGestureRecognizer();
             tap.Tapped += async (object sender, EventArgs e) =>
             {
+                var page = (App.Current.MainPage as SharedTransitionNavigationPage).CurrentPage;
+                SharedTransitionNavigationPage.SetTransitionDuration(page, 1000);
+                SharedTransitionNavigationPage.SetTransitionSelectedGroup(page, item.Idproducto);
                 await Navigation.PushAsync(new Agregarcompra(item));
             };
 

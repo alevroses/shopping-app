@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Appcompras.Vistas.Compras"
              NavigationPage.HasNavigationBar="False"
-             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:transicion ="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions">
     <StackLayout BackgroundColor="#050506">
         <Grid RowDefinitions="*, 100"
               VerticalOptions="FillAndExpand"
@@ -100,7 +101,9 @@
                                 <Image Source="{Binding Imagen}"
                                        Margin="0,6"
                                        WidthRequest="30"
-                                       HorizontalOptions="Center" />
+                                       HorizontalOptions="Center" 
+                                       transicion:Transition.Group="{Binding Idproducto}"
+                                       transicion:Transition.Name="producto"/>
                             </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>

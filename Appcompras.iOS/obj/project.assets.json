@@ -289,6 +289,22 @@
           }
         }
       },
+      "Xamarin.Plugin.SharedTransitions/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.725"
+        },
+        "compile": {
+          "lib/xamarinios10/Plugin.SharedTransitions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.SharedTransitions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Appcompras/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -296,7 +312,8 @@
           "FirebaseDatabase.net": "4.1.0",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
-          "Xamarin.Forms.PancakeView": "2.3.0.759"
+          "Xamarin.Forms.PancakeView": "2.3.0.759",
+          "Xamarin.Plugin.SharedTransitions": "2.4.0"
         },
         "compile": {
           "bin/placeholder/Appcompras.dll": {}
@@ -594,6 +611,22 @@
           }
         }
       },
+      "Xamarin.Plugin.SharedTransitions/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.725"
+        },
+        "compile": {
+          "lib/xamarinios10/Plugin.SharedTransitions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.SharedTransitions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Appcompras/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -601,7 +634,8 @@
           "FirebaseDatabase.net": "4.1.0",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
-          "Xamarin.Forms.PancakeView": "2.3.0.759"
+          "Xamarin.Forms.PancakeView": "2.3.0.759",
+          "Xamarin.Plugin.SharedTransitions": "2.4.0"
         },
         "compile": {
           "bin/placeholder/Appcompras.dll": {}
@@ -899,6 +933,22 @@
           }
         }
       },
+      "Xamarin.Plugin.SharedTransitions/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.725"
+        },
+        "compile": {
+          "lib/xamarinios10/Plugin.SharedTransitions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.SharedTransitions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Appcompras/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -906,7 +956,8 @@
           "FirebaseDatabase.net": "4.1.0",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
-          "Xamarin.Forms.PancakeView": "2.3.0.759"
+          "Xamarin.Forms.PancakeView": "2.3.0.759",
+          "Xamarin.Plugin.SharedTransitions": "2.4.0"
         },
         "compile": {
           "bin/placeholder/Appcompras.dll": {}
@@ -1204,6 +1255,22 @@
           }
         }
       },
+      "Xamarin.Plugin.SharedTransitions/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.725"
+        },
+        "compile": {
+          "lib/xamarinios10/Plugin.SharedTransitions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.SharedTransitions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Appcompras/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1211,7 +1278,8 @@
           "FirebaseDatabase.net": "4.1.0",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
-          "Xamarin.Forms.PancakeView": "2.3.0.759"
+          "Xamarin.Forms.PancakeView": "2.3.0.759",
+          "Xamarin.Plugin.SharedTransitions": "2.4.0"
         },
         "compile": {
           "bin/placeholder/Appcompras.dll": {}
@@ -1899,6 +1967,25 @@
         "xamarin.forms.pancakeview.nuspec"
       ]
     },
+    "Xamarin.Plugin.SharedTransitions/2.4.0": {
+      "sha512": "upju4Pst1knGfdLQWWjT4ASuKQk2s7RhK8B4Yw6TILRerPZmhPmqJ/fV8NIR6HuLIsX8CxOg8fR+tNjOC6YwFA==",
+      "type": "package",
+      "path": "xamarin.plugin.sharedtransitions/2.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/Plugin.SharedTransitions.dll",
+        "lib/monoandroid10.0/Plugin.SharedTransitions.xml",
+        "lib/monoandroid90/Plugin.SharedTransitions.dll",
+        "lib/monoandroid90/Plugin.SharedTransitions.xml",
+        "lib/netstandard2.0/Plugin.SharedTransitions.dll",
+        "lib/netstandard2.0/Plugin.SharedTransitions.xml",
+        "lib/xamarinios10/Plugin.SharedTransitions.dll",
+        "lib/xamarinios10/Plugin.SharedTransitions.xml",
+        "xamarin.plugin.sharedtransitions.2.4.0.nupkg.sha512",
+        "xamarin.plugin.sharedtransitions.nuspec"
+      ]
+    },
     "Appcompras/1.0.0": {
       "type": "project",
       "path": "../Appcompras/Appcompras.csproj",
@@ -1911,7 +1998,8 @@
       "FirebaseDatabase.net >= 4.1.0",
       "Xamarin.Essentials >= 1.7.0",
       "Xamarin.Forms >= 5.0.0.2196",
-      "Xamarin.Forms.PancakeView >= 2.3.0.759"
+      "Xamarin.Forms.PancakeView >= 2.3.0.759",
+      "Xamarin.Plugin.SharedTransitions >= 2.4.0"
     ]
   },
   "packageFolders": {
@@ -1971,6 +2059,10 @@
           "Xamarin.Forms.PancakeView": {
             "target": "Package",
             "version": "[2.3.0.759, )"
+          },
+          "Xamarin.Plugin.SharedTransitions": {
+            "target": "Package",
+            "version": "[2.4.0, )"
           }
         }
       }

@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Appcompras.Vistas.Agregarcompra"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             xmlns:transicion="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions">
     <StackLayout BackgroundColor="White"
                  Padding="36,15"
                  Spacing="20">
@@ -17,7 +18,8 @@
         <StackLayout>
             <Image Source="{Binding Parametrosrecibe.Icono}"
                    Margin="0,0,0,30"
-                   HeightRequest="220"/>
+                   HeightRequest="220"
+                   transicion:Transition.Name="producto"/>
             <Label Text="{Binding Parametrosrecibe.Descripcion}"
                    FontAttributes="Bold"
                    FontSize="36"

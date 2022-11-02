@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hXGsIXSZ0xqa/YhWFx/1Tm571/vGFWVvz7/v6Rf09zOyldz+2aEuBVbUitYkQpVy1byoZ6tmXlZ1rklFJ3qK6w==",
+  "dgSpecHash": "xoXfveUn0iw7j+QWguMZ84slBZIseJPlQ9ji1S+toddMLLhsT1dOczY+Y1aJ5tXKc+8+SDMWBAl67OcouPs8Eg==",
   "success": true,
   "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\Appcompras\\Appcompras.iOS\\Appcompras.iOS.csproj",
   "expectedPackageFiles": [
@@ -15,7 +15,8 @@
     "C:\\Users\\aleVR\\.nuget\\packages\\system.runtime.interopservices.windowsruntime\\4.3.0\\system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
-    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.plugin.sharedtransitions\\2.4.0\\xamarin.plugin.sharedtransitions.2.4.0.nupkg.sha512"
   ],
   "logs": []
 }

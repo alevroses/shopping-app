@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2mAJg5W6mdhlvpdiroHE9ku4ODjmuPH4SgMuzapaFv9ockaQrmc4wFGja0GkZEGDwT627CzotbO2u4IoKIN7HA==",
+  "dgSpecHash": "R0V3VJxABbk6Qpl+3qYtrXj9Q/iFnY7T5ngRlz2AyhyvJeEQoGfvWl1MpDF7wmW0CAXQ0bpC261/Rd1n0VTyKw==",
   "success": true,
   "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\Appcompras\\Appcompras.Android\\Appcompras.Android.csproj",
   "expectedPackageFiles": [
@@ -70,7 +70,8 @@
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
-    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.plugin.sharedtransitions\\2.4.0\\xamarin.plugin.sharedtransitions.2.4.0.nupkg.sha512"
   ],
   "logs": []
 }
