@@ -28,5 +28,15 @@ namespace Appcompras.Vistas
         {
             await vm.MostrarVistapreviaDc();
         }
+
+        private void DeslizarPanelcontador(object sender, SwipedEventArgs e)
+        {
+
+        }
+
+        private void DeslizarPaneldetallecompra(object sender, SwipedEventArgs e)
+        {
+
+        }
     }
 }

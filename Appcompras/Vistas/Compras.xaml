@@ -6,7 +6,7 @@
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              xmlns:transicion ="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions">
     <StackLayout BackgroundColor="#050506">
-        <Grid RowDefinitions="*, 100" IsVisible="false"
+        <Grid RowDefinitions="*, 100"
               VerticalOptions="FillAndExpand"
               x:Name="gridproductos">
             <pancake:PancakeView
@@ -77,6 +77,10 @@
                          Orientation="Horizontal"
                          Margin="20,0,10,0"
                          x:Name="Panelcontador">
+                <StackLayout.GestureRecognizers>
+                    <SwipeGestureRecognizer Direction="Up"
+                                            Swiped="DeslizarPanelcontador"/>
+                </StackLayout.GestureRecognizers>
                 <Label Text="Cart"
                        FontSize="30"
                        WidthRequest="100"
@@ -127,7 +131,12 @@
         </Grid>
         <!--#region Paneldetallecompra -->
         <StackLayout x:Name="Paneldetallecompra"
-                     VerticalOptions="FillAndExpand">
+                     VerticalOptions="FillAndExpand"
+                     IsVisible="{Binding IsvisiblePanelDc}">
+            <StackLayout.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Down"
+                                        Swiped="DeslizarPaneldetallecompra"/>
+            </StackLayout.GestureRecognizers>
             <Label Text="Cart"
                    TextColor="White"
                    FontSize="32"

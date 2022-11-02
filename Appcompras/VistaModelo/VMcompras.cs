@@ -19,6 +19,8 @@ namespace Appcompras.VistaModelo
 
         List<Mproductos> _listaproductos;
         List<Mdetallecompras> _listaVistapreviaDc;
+
+        bool _IsvisiblePaneldetallecompra;
         #endregion
 
         #region CONSTRUCTOR
@@ -26,10 +28,17 @@ namespace Appcompras.VistaModelo
         {
             Navigation = navigation;
             Mostrarproductos(Carrilderecha, Carrilizquierda);
+            IsvisiblePanelDc = false;
         }
         #endregion
 
         #region OBJETOS
+        public bool IsvisiblePanelDc
+        {
+            get { return _IsvisiblePaneldetallecompra; }
+            set { SetValue(ref _IsvisiblePaneldetallecompra, value); }
+        }
+
         public List<Mdetallecompras> ListaVistapreviaDc
         {
             get { return _listaVistapreviaDc; }
