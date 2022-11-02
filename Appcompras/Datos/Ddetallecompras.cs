@@ -31,17 +31,22 @@ namespace Appcompras.Datos
             var parametrosProductos = new Mproductos();
             var funcionproductos = new Dproductos();
 
-            var data = await Cconexion.firebase
+            var data = (await Cconexion.firebase
                 .Child("Detallecompra")
-                .OnceAsync<Mdetallecompras>();
-
-            data.Where(a => a.Key != "Modelo");
+                .OnceAsync<Mdetallecompras>())
+                .Where(a => a.Key != "Modelo")
+                .Select(item=> new Mdetallecompras
+                {
+                    Idproducto = item.Object.Idproducto,
+                    Iddetallecompra = item.Key
+                })
+                ;
 
             foreach(var hobit in data)
             {
                 var parametros = new Mdetallecompras();
-                parametros.Idproducto = hobit.Object.Idproducto;
-                parametrosProductos.Idproducto = hobit.Object.Idproducto;
+                parametros.Idproducto = hobit.Idproducto;
+                parametrosProductos.Idproducto = hobit.Idproducto;
                 var listaproductos = await funcionproductos.MostrarproductosXid(parametrosProductos);
 
                 parametros.Imagen = listaproductos[0].Icono;
