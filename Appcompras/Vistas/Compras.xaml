@@ -126,7 +126,8 @@
             </Grid.GestureRecognizers>
         </Grid>
         <!--#region Paneldetallecompra -->
-        <StackLayout x:Name="Paneldetallecompra">
+        <StackLayout x:Name="Paneldetallecompra"
+                     VerticalOptions="FillAndExpand">
             <Label Text="Cart"
                    TextColor="White"
                    FontSize="32"
@@ -134,20 +135,53 @@
                    Padding="40,28,40,40"
                    HeightRequest="120"
                    WidthRequest="100"/>
-            <CollectionView HeightRequest="250"
+            <CollectionView HeightRequest="300"
                             VerticalOptions="Center">
                 
             </CollectionView>
-            <StackLayout Orientation="Horizontal">
-                <Grid>
+            <StackLayout Orientation="Horizontal"
+                         Margin="36,0,32,0">
+                <Grid WidthRequest="80">
                     <Frame CornerRadius="24"
-                           BackgroundColor="#555555">
+                           BackgroundColor="#555555"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center">
                         
                     </Frame>
                     <Image Source="https://i.postimg.cc/1Xk4m0Yy/delivery.png"
-                           WidthRequest="26"/>
+                           WidthRequest="26"
+                           HorizontalOptions="Center"/>
                 </Grid>
+                <StackLayout Margin="20,0,100,0">
+                    <Label Text="Delivery"
+                           TextColor="White"
+                           />
+                    <Label Text="All orders of $40 or more qualify for FREE delivery."
+                           TextColor="Gray" />
+                </StackLayout>
+                <Label Text="$10"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       WidthRequest="100"/>
             </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         Margin="40,50,40,0">
+                <Label Text="Total:"
+                       TextColor="White"
+                       FontSize="30"
+                       FontAttributes="Bold"/>
+                <Label Text="$37.85"
+                       TextColor="White"
+                       FontSize="30"
+                       FontAttributes="Bold" 
+                       HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <Button Text="Next"
+                    BackgroundColor="#DEBB44"
+                    CornerRadius="30"
+                    Margin="15,0,15,20"
+                    VerticalOptions="EndAndExpand"
+                    HeightRequest="60"/>
         </StackLayout>
         <!--#endregion-->
     </StackLayout>
