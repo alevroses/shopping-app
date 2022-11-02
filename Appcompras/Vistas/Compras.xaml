@@ -6,9 +6,9 @@
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              xmlns:transicion ="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions">
     <StackLayout BackgroundColor="#050506">
-        <Grid RowDefinitions="*, 100"
+        <Grid RowDefinitions="*, 100" IsVisible="false"
               VerticalOptions="FillAndExpand"
-              >
+              x:Name="gridproductos">
             <pancake:PancakeView
                 CornerRadius="0,0,40,40"
                 BackgroundColor="#efefec">
@@ -72,22 +72,24 @@
                     </Grid>
                 </ScrollView>
             </pancake:PancakeView>
+            <!--#region Panelcontador -->
             <StackLayout Grid.Row="1"
                          Orientation="Horizontal"
-                         Margin="20,0,10,0">
+                         Margin="20,0,10,0"
+                         x:Name="Panelcontador">
                 <Label Text="Cart"
                        FontSize="30"
                        WidthRequest="100"
                        FontAttributes="Bold"
                        VerticalOptions="Center"
-                       TextColor="White"/>
+                       TextColor="White" />
                 <CollectionView HorizontalOptions="CenterAndExpand"
                                 VerticalOptions="Center"
                                 ItemsSource="{Binding ListaVistapreviaDc}">
                     <CollectionView.ItemsLayout>
                         <GridItemsLayout Orientation="Horizontal"
                                          Span="1"
-                                         HorizontalItemSpacing="10"/>
+                                         HorizontalItemSpacing="10" />
                     </CollectionView.ItemsLayout>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
@@ -95,15 +97,13 @@
                                   WidthRequest="30">
                                 <Frame CornerRadius="24"
                                        HorizontalOptions="Center"
-                                       VerticalOptions="Center">
-                                    
-                                </Frame>
+                                       VerticalOptions="Center"></Frame>
                                 <Image Source="{Binding Imagen}"
                                        Margin="0,6"
                                        WidthRequest="30"
-                                       HorizontalOptions="Center" 
+                                       HorizontalOptions="Center"
                                        transicion:Transition.Group="{Binding Idproducto}"
-                                       transicion:Transition.Name="producto"/>
+                                       transicion:Transition.Name="producto" />
                             </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
@@ -117,12 +117,38 @@
                     <Label Text="1"
                            VerticalOptions="Center"
                            FontSize="15"
-                           FontAttributes="Bold"/>
+                           FontAttributes="Bold" />
                 </Frame>
             </StackLayout>
+            <!--#endregion-->
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding command}" />
             </Grid.GestureRecognizers>
         </Grid>
+        <!--#region Paneldetallecompra -->
+        <StackLayout x:Name="Paneldetallecompra">
+            <Label Text="Cart"
+                   TextColor="White"
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   Padding="40,28,40,40"
+                   HeightRequest="120"
+                   WidthRequest="100"/>
+            <CollectionView HeightRequest="250"
+                            VerticalOptions="Center">
+                
+            </CollectionView>
+            <StackLayout Orientation="Horizontal">
+                <Grid>
+                    <Frame CornerRadius="24"
+                           BackgroundColor="#555555">
+                        
+                    </Frame>
+                    <Image Source="https://i.postimg.cc/1Xk4m0Yy/delivery.png"
+                           WidthRequest="26"/>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+        <!--#endregion-->
     </StackLayout>
 </ContentPage>

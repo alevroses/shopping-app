@@ -46,14 +46,6 @@
               "target": "Package",
               "version": "[4.1.0, )"
             },
-            "FirebaseDatabase.net": {
-              "target": "Package",
-              "version": "[4.1.0, )"
-            },
-            "Xamarin.Essentials": {
-              "target": "Package",
-              "version": "[1.7.0, )"
-            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.7.0, )"
@@ -62,32 +54,15 @@
               "target": "Package",
               "version": "[5.0.0.2196, )"
             },
-            "Xamarin.Forms": {
-              "target": "Package",
-              "version": "[5.0.0.2196, )"
-            },
             "Xamarin.Forms.PancakeView": {
               "target": "Package",
               "version": "[2.3.0.759, )"
-            },
-            "Xamarin.Forms.PancakeView": {
-              "target": "Package",
-              "version": "[2.3.0.759, )"
-            },
-            "Xamarin.Plugin.SharedTransitions": {
-              "target": "Package",
-              "version": "[2.4.0, )"
             },
             "Xamarin.Plugin.SharedTransitions": {
               "target": "Package",
               "version": "[2.4.0, )"
             }
           }
-        }
-      },
-      "runtimes": {
-        "win": {
-          "#import": []
         }
       }
     },
