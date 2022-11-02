@@ -130,6 +130,7 @@ namespace Appcompras.VistaModelo
             tap.Tapped += async (object sender, EventArgs e) =>
             {
                 var page = (App.Current.MainPage as SharedTransitionNavigationPage).CurrentPage;
+                SharedTransitionNavigationPage.SetBackgroundAnimation(page, BackgroundAnimation.SlideFromRight);
                 SharedTransitionNavigationPage.SetTransitionDuration(page, 1000);
                 SharedTransitionNavigationPage.SetTransitionSelectedGroup(page, item.Idproducto);
                 await Navigation.PushAsync(new Agregarcompra(item));
