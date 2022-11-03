@@ -69,7 +69,9 @@ namespace Appcompras.Datos
                 .Select(item => new Mdetallecompras
                 {
                     Idproducto = item.Object.Idproducto,
-                    Iddetallecompra = item.Key
+                    Iddetallecompra = item.Key,
+                    Cantidad = item.Object.Cantidad,
+                    Total = item.Object.Total
                 })
                 ;
 
@@ -80,6 +82,7 @@ namespace Appcompras.Datos
                 parametrosProductos.Idproducto = hobit.Idproducto;
                 var listaproductos = await funcionproductos.MostrarproductosXid(parametrosProductos);
 
+                parametros.Descripcion = listaproductos[0].Descripcion;
                 parametros.Imagen = listaproductos[0].Icono;
                 parametros.Cantidad = hobit.Cantidad;
                 parametros.Total = hobit.Total;

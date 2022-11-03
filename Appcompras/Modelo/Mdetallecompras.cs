@@ -14,5 +14,6 @@ namespace Appcompras.Modelo
 
         //
         public string Imagen { get; set; }
+        public string Descripcion { get; set; }
     }
 }
