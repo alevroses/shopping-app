@@ -29,12 +29,12 @@ namespace Appcompras.Vistas
             await vm.MostrarVistapreviaDc();
         }
 
-        private void DeslizarPanelcontador(object sender, SwipedEventArgs e)
+        private async void DeslizarPanelcontador(object sender, SwipedEventArgs e)
         {
-
+            await vm.MostrarpanelDC(gridproductos, Paneldetallecompra, Panelcontador);
         }
 
-        private void DeslizarPaneldetallecompra(object sender, SwipedEventArgs e)
+        private async void DeslizarPaneldetallecompra(object sender, SwipedEventArgs e)
         {
 
         }

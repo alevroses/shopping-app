@@ -131,7 +131,7 @@
         </Grid>
         <!--#region Paneldetallecompra -->
         <StackLayout x:Name="Paneldetallecompra"
-                     VerticalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand"                     
                      IsVisible="{Binding IsvisiblePanelDc}">
             <StackLayout.GestureRecognizers>
                 <SwipeGestureRecognizer Direction="Down"
