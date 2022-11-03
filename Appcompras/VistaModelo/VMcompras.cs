@@ -19,6 +19,7 @@ namespace Appcompras.VistaModelo
 
         List<Mproductos> _listaproductos;
         List<Mdetallecompras> _listaVistapreviaDc;
+        List<Mdetallecompras> _listaDc;
 
         bool _IsvisiblePaneldetallecompra;
         #endregion
@@ -43,6 +44,12 @@ namespace Appcompras.VistaModelo
         {
             get { return _listaVistapreviaDc; }
             set { SetValue(ref _listaVistapreviaDc, value); }
+        }
+
+        public List<Mdetallecompras> ListaDc
+        {
+            get { return _listaDc; }
+            set { SetValue(ref _listaDc, value); }
         }
 
         public List<Mproductos> Listaproductos
@@ -168,12 +175,30 @@ namespace Appcompras.VistaModelo
 
         public async Task MostrarpanelDC(Grid gridproductos, StackLayout paneldetalleC, StackLayout panelcontador)
         {
+            uint duracion = 700;
             await Task.WhenAll(
                 panelcontador.FadeTo(0, 500),
-                gridproductos.TranslateTo(0, 200, 500, Easing.CubicIn),
-                paneldetalleC.TranslateTo(0, 200, 500, Easing.CubicIn)
+                gridproductos.TranslateTo(0, -200, duracion+200, Easing.CubicIn),
+                paneldetalleC.TranslateTo(0, -300, duracion, Easing.CubicIn)
                 );
             IsvisiblePanelDc = true;
+        }
+
+        public async Task MostrargridProductos(Grid gridproductos, StackLayout paneldetalleC, StackLayout panelcontador)
+        {
+            uint duracion = 700;
+            await Task.WhenAll(
+                panelcontador.FadeTo(1, 500),
+                gridproductos.TranslateTo(0, 0, duracion + 200, Easing.CubicIn),
+                paneldetalleC.TranslateTo(0, 1000, duracion, Easing.CubicIn)
+                );
+            IsvisiblePanelDc = false;
+        }
+
+        public async Task MostrarDetalleC()
+        {
+            var funcion = new Ddetallecompras();
+            ListaDc = await funcion.MostrarDc();
         }
         #endregion
 
